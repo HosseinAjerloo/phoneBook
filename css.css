@@ -1,0 +1,201 @@
+@import url('cssReset.css');
+
+@font-face {
+    font-family: 'vazir';
+    src: url('font/Vazir.woff') format('woff');
+    src: url('font/Vazir.woff2') format('woff2');
+}
+
+body {
+    direction: rtl;
+    font-size: 15px;
+    font-family: 'vazir';
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent_phone_book {
+    background-color: rgb(253, 253, 253);
+    width: 500px;
+    border-radius: 5px 0 5px 5px;
+    position: relative;
+    box-shadow: 1px 1px 3px 2px #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s all;
+
+}
+
+.btn {
+    width: 100%;
+    position: absolute;
+    top: -37px;
+    right: 0;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.btn button {
+    background-color: rgb(253, 253, 253);
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'vazir';
+    border-radius: 3px;
+    width: 27%;
+    margin: 0 6px 0 0;
+    box-shadow: 1px 1px 3px 2px #e9e9e9;
+}
+
+.btn button:hover {
+    cursor: pointer;
+}
+
+.btn button:first-child {
+    border-radius: 3px 3px 0 3px;
+    margin: 0;
+
+}
+
+.animate {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    filter: blur(10px);
+    top: 0;
+    opacity: 0.8px;
+    z-index: 10;
+}
+
+.content {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+.content .header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: transparent;
+    height: 30px;
+    z-index: 11;
+}
+.search{
+    width: 100%;
+    font-family: 'vazir';
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+;
+}
+.search input{
+    width: 90%;
+    font-family: 'vazir';
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 1px 1px 3px 2px #e9e9e9;
+    border-radius: 3px;
+}
+.search button{
+    font-size: 17px;
+    width: 90%;
+    font-family: 'vazir';
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 1px 1px 3px 2px #e9e9e9;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 1s all;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.addcontent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.addcontent-input{
+    width: 90%;
+    font-family: 'vazir';
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addcontent-input input{
+    width: 45%;
+    font-family: 'vazir';
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 1px 1px 3px 2px #e9e9e9;
+    border-radius: 3px;
+    height: 25px;
+}
+.active{
+   border: 1px solid #bbf8bb!important;
+}
+.all{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_info{
+    width: 90%;
+    height: auto;
+    box-shadow: 1px 1px 3px 2px #e9e9e9;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 10px 0;
+    transition: 0.3s ease-in-out;
+}
+.contact_info p{
+    font-family: 'vazir';
+    margin: 10px 0;
+    font-size: 13px;
+}
+.contact_info:hover{
+    transform: scale(1.05);
+    border: 1px solid #bbf8bb!important;
+    outline: none;
+}
+.alert{
+    margin-top: 10px;
+    font-size: 13px;
+    width: 50%;
+    text-align: center;
+}
+
+
